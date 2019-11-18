@@ -1,0 +1,18 @@
+{
+  "name": "tabelica",
+  "version": "1.0.0",
+  "description": "lightweight SASS starter package",
+  "main": "",
+  "scripts": {
+    "scss": "node-sass --watch src/scss -o dist/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agrakalic/tabelica"
+  },
+  "author": "Alen Grakalić",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}

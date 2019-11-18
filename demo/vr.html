@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../dist/css/main.css">
+	<style>
+		/* demo purpose styles */
+		body{
+			background-image: linear-gradient(
+				to bottom,
+				#ffffff 75%,
+				#f0f0f0 75%,
+				#f0f0f0 82%,
+				#ffffff 82%,
+				#ffffff 100%
+			);
+			background-size: 1.5rem 1.5rem;
+		}
+		header, footer {
+			border: none !important;
+		}
+
+	</style>
+</head>
+<body>
+
+<div class="container" id="container">
+
+	<header class="header" role="banner">
+		<div class="header__inner">
+
+			<h1>Vertical rhythm</h1>
+			<p>Tabelica is following the principles of vertical rhythm. In vertical rhythm, we try to keep vertical spaces between elements on a page consistent with each other.</p>
+			<p><a href="javascript:void(0)" id="toggler" onclick="toggle()">Toggle background lines</a>.</p>
+			<p class="message--note">Please have in mind that the background lines on this page are designed to fit the default line height and font size values defined in <code>src/scss/global/variables.scss</code>.</em></p>
+
+		</div>
+	</header>
+
+	<div class="content">
+		<div class="content__inner">
+
+			<div class="content__main">
+
+				<main role="main">
+
+					<h1>Heading 1</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel massa sem. Aenean eleifend consectetur tortor eu semper. Aenean odio massa, malesuada nec turpis non, venenatis gravida ante. Sed ac justo risus. Ut tincidunt vulputate ipsum, quis varius nunc tristique in. Proin nec lacinia eros. Proin ullamcorper erat viverra justo rutrum lobortis. Fusce congue, enim eu ultrices laoreet, sapien turpis fermentum risus, vel pellentesque quam velit sit amet sem. Cras tortor ipsum, vestibulum ut condimentum sed, volutpat dignissim tortor. Donec at euismod arcu. Donec et felis eget erat luctus sollicitudin a et mi. Duis fermentum cursus nisi, vitae porttitor libero porta pulvinar. Phasellus malesuada aliquam lectus ultrices convallis. </p>
+
+					<h2>Heading 2</h2>
+					<p>Ut congue lorem ac eros malesuada efficitur. In sit amet pellentesque quam. Quisque rhoncus laoreet mauris, posuere luctus elit rhoncus id. Pellentesque eleifend id turpis sed ornare.</p>
+
+					<h3>Heading 3 <br />on three <br />lines</h3>
+					<p>Ut congue lorem ac eros malesuada efficitur. In sit amet pellentesque quam. Quisque rhoncus laoreet mauris, posuere luctus elit rhoncus id. Pellentesque eleifend id turpis sed ornare.</p>
+
+					<div class="row">
+						<div class="col">
+							<h3>Heading 3</h3>
+							<p>Quisque ornare risus nulla, sodales condimentum sem mollis eget. Sed eu justo vitae libero laoreet vehicula nec id nisl.</p>
+						</div>
+						<div class="col">
+							<h3>Heading 3</h3>
+							<p>Nunc nec arcu metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed varius sed quam quis vestibulum.  Suspendisse nibh ligula, maximus vehicula sem ut, vulputate iaculis orci.</p>
+						</div>
+						<div class="col">
+							<h3>Heading 3</h3>
+							<p>Proin et purus tortor. Cras et ante sem. Integer efficitur sit amet nibh ac placerat.</p>
+						</div>
+					</div>
+
+					<h3>Tables</h3>
+					<div class="table-wrapper">
+						<table>
+							<caption>Even after inserting the table element, the vertical rhytm is not broken.</caption>
+							<thead>
+								<tr>
+									<th>Table Heading 1</th>
+									<th>Table Heading 2</th>
+									<th>Table Heading 3</th>
+									<th>Table Heading 4</th>
+								</tr>
+							</thead>
+							<tfoot>
+								<tr>
+									<th>Table Footer 1</th>
+									<th>Table Footer 2</th>
+									<th>Table Footer 3</th>
+									<th>Table Footer 4</th>
+								</tr>
+							</tfoot>
+							<tbody>
+								<tr>
+									<td>Table Cell 1</td>
+									<td>Table Cell 2</td>
+									<td>Table Cell 3</td>
+									<td>Table Cell 4</td>
+								</tr>
+								<tr>
+									<td>Table Cell 1</td>
+									<td>Table Cell 2</td>
+									<td>Table Cell 3</td>
+									<td>Table Cell 4</td>
+								</tr>
+								<tr>
+									<td>Table Cell 1</td>
+									<td>Table Cell 2</td>
+									<td>Table Cell 3</td>
+									<td>Table Cell 4</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<h3>Heading 3</h3>
+					<p>Vestibulum ut condimentum sed, volutpat dignissim tortor. Donec at euismod arcu. Donec et felis eget erat luctus sollicitudin a et mi. Duis fermentum cursus nisi, vitae porttitor libero porta pulvinar. Phasellus malesuada aliquam lectus ultrices convallis.</p>
+					<p>Aliquam accumsan sem lectus. Vestibulum eu auctor nulla, eget lobortis ex. Sed turpis magna, placerat a elit et, consectetur interdum eros. In luctus ex vitae orci commodo, eget fermentum nisi gravida. </p>
+
+	      </main>
+
+				<aside role="complementary">
+
+						<h3>Heading 3</h3>
+						<p>Vestibulum ut condimentum sed, volutpat dignissim tortor. Donec at euismod arcu. Donec et felis eget erat luctus sollicitudin a et mi. Duis fermentum cursus nisi, vitae porttitor libero porta pulvinar. Phasellus malesuada aliquam lectus ultrices convallis.</p>
+						<p>Aliquam accumsan sem lectus. Vestibulum eu auctor nulla, eget lobortis ex. Sed turpis magna, placerat a elit et, consectetur interdum eros. In luctus ex vitae orci commodo, eget fermentum nisi gravida. </p>
+
+						<h4>Heading 4</h4>
+						<ol>
+							<li>List Item 1</li>
+							<li>List Item 2</li>
+							<li>List Item 3</li>
+						</ol>
+
+						<h4>Heading 4</h4>
+
+						<p>Quisque ornare risus nulla, sodales condimentum sem mollis eget. Sed eu justo vitae libero laoreet vehicula nec id nisl.</p>
+
+				</aside>
+
+			</div>
+
+		</div>
+	</div>
+
+	<footer class="footer" role="contentinfo">
+		<div class="footer__inner">
+			<ul class="footer__nav">
+				<li><a href="text.html">Text Styles</a></li>
+				<li><a href="grid.html">Grid System</a></li>
+				<li><a href="forms.html">Forms</a></li>
+				<li><a href="icons.html">Icons</a></li>
+				<li><a href="vr.html">Vertical Rhythm</a></li>
+			</ul>
+		</div>
+	</footer>
+
+</div>
+
+<script>
+
+function toggle(){
+	var button = document.getElementById('toggler');
+	var container = document.getElementById('container');
+	if (container.style.backgroundColor == 'rgb(255, 255, 255)') {
+      container.style.backgroundColor = '';
+  }
+  else {
+      container.style.backgroundColor = 'rgb(255, 255, 255)';
+  }
+}
+
+</script>
+
+</body>
+</html>

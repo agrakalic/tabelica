@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../dist/css/main.css">
+</head>
+<body>
+
+<div class="container">
+
+	<header class="header" role="banner">
+		<div class="header__inner">
+			<h1>Forms</h1>
+		</div>
+	</header>
+
+	<div class="content">
+		<div class="content__inner">
+
+			<div class="content__main">
+
+				<main role="main">
+
+					<h2>Basic form elements</h2>
+
+					<form>
+
+						<fieldset>
+
+							<legend>Form legend</legend>
+
+							<div class="form__group">
+								<label for="input-text">Text Input</label>
+								<input id="input-text" type="text" placeholder="Text Input">
+							</div>
+
+							<div class="form__group">
+								<label for="input-email">Email Address</label>
+								<input id="input-email" type="email" placeholder="your@emailaddress.com">
+							</div>
+
+							<div class="form__group">
+								<label for="input-password">Password</label>
+								<input id="input-password" type="password" placeholder="Type your Password">
+							</div>
+
+							<div class="form__group">
+								<label for="select">Select</label>
+								<select id="select">
+									<optgroup label="Option Group">
+										<option>Option One</option>
+										<option>Option Two</option>
+										<option>Option Three</option>
+									</optgroup>
+								</select>
+							</div>
+
+							<div class="form__group">
+								<label>Checkboxes</label>
+	            	<ul>
+	                <li><label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"> Choice A</label></li>
+	                <li><label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox"> Choice B</label></li>
+	                <li><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Choice C</label></li>
+	              </ul>
+	            </div>
+
+	            <div class="form__group">
+								<label>Radio Buttons</label>
+	              <ul>
+	                <li><label for="radio1"><input id="radio1" name="radio" type="radio" class="radio" checked="checked"> Option 1</label></li>
+	                <li><label for="radio2"><input id="radio2" name="radio" type="radio" class="radio"> Option 2</label></li>
+	                <li><label for="radio3"><input id="radio3" name="radio" type="radio" class="radio"> Option 3</label></li>
+	              </ul>
+							</div>
+
+							<div class="form__group">
+								<label for="textarea">Textarea</label>
+								<textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+								<span class="form__group-caption">Form group caption</span>
+							</div>
+
+						</fieldset>
+
+						<div class="form__actions">
+							<button type="submit">Submit</button>
+							<button type="reset">Reset</button>
+							<button type="button" disabled>Disabled Button</button>
+						</div>
+
+					</form>
+
+					<h2>Other Form Styles</h2>
+
+					<form>
+
+						<fieldset>
+
+							<p class="message--info">.message--info</p>
+							<p class="message--error">.message--error</p>
+							<p class="message--success">.message--success</p>
+							<p class="message--note">.message--note</p>
+
+							<div class="form__group">
+								<label for="input-text2">Disabled Text Input</label>
+								<input id="input-text2" type="text" placeholder="Disabled Text Input" disabled>
+							</div>
+
+							<div class="form__group">
+								<label for="input-text3">Invalid Text Input</label>
+								<input id="input-text3" type="text" placeholder="Text Input" class="invalid">
+								<span class="form__group-caption">Use class name <code>invalid</code></span>
+							</div>
+
+						</fieldset>
+
+						<fieldset>
+
+							<legend>Form elements in grid</legend>
+
+							<div class="row">
+
+								<div class="form__group col6">
+									<label for="input-text4">Text Input</label>
+									<input id="input-text4" type="text" placeholder="Text Input">
+								</div>
+
+								<div class="form__group col6">
+									<label for="input-text5">Text Input</label>
+									<input id="input-text5" type="text" placeholder="Text Input">
+								</div>
+
+								<div class="form__group col12">
+									<label for="input-text6">Full Width Text Input</label>
+									<input id="input-text6" type="text" placeholder="Text Input">
+								</div>
+
+								<div class="form__group col3">
+									<label for="input-text7">Text Input</label>
+									<input id="input-text7" type="text" placeholder="Text Input">
+								</div>
+
+								<div class="form__group col3">
+									<label for="input-text8">Text Input</label>
+									<input id="input-text8" type="text" placeholder="Text Input">
+								</div>
+
+								<div class="form__group col6">
+									<label for="input-text9">Text Input</label>
+									<input id="input-text9" type="text" placeholder="Text Input">
+								</div>
+
+							</div>
+
+						</fieldset>
+
+						<fieldset>
+
+							<legend>In-grid button</legend>
+
+							<div class="form__group">
+
+								<label for="input-text10">Text Input</label>
+
+								<div class="row">
+
+									<div class="fcol8">
+										<input id="input-text10" type="text" placeholder="Text Input">
+									</div>
+
+									<div class="fcol4">
+										<button type="button" class="button--block">In-grid Button</button>
+									</div>
+
+								</div>
+
+								<span class="form__group-caption">Use full column (no gutter) grid class names <code>.fcol1 ... .fcol12</code> and class name <code>.button--block</code> for button.</span>
+
+							</div>
+
+						</fieldset>
+
+					</form>
+
+					<h2>HTML5 Inputs</h2>
+
+					<form>
+
+						<fieldset>
+
+							<div class="form__group">
+								<label for="form-color">Color input</label>
+								<input type="color" id="form-color" value="#000000">
+							</div>
+
+							<div class="form__group">
+								<label for="form-number">Number input</label>
+								<input type="number" id="form-number" min="0" max="10" value="5">
+							</div>
+
+							<div class="form__group">
+								<label for="form-range">Range input</label>
+								<input type="range" id="form-range" value="10">
+							</div>
+
+							<div class="form__group">
+								<label for="form-date">Date input</label>
+								<input type="date" id="form-date" value="1970-01-01">
+							</div>
+
+						</fieldset>
+
+					</form>
+
+	      </main>
+
+				<aside role="complementary">
+					<h3>Quick Info</h3>
+					<p>Form elements use class names <code>.form__group</code> for wrapping the
+						label/input group and <code>.form__actions</code> for form buttons. <br>
+						There is also a class named <code>.form__group-caption</code> available
+						to be used as a short description.</p>
+					<p>There are several class names available for form messages as well. These are
+						<code>.message--error</code>
+						<code>.message--success</code>
+						<code>.message--info</code> and
+						<code>.message--note</code>
+					</p>
+				</aside>
+
+			</div>
+
+		</div>
+	</div>
+
+	<footer class="footer" role="contentinfo">
+		<div class="footer__inner">
+			<ul class="footer__nav">
+				<li><a href="text.html">Text Styles</a></li>
+				<li><a href="grid.html">Grid System</a></li>
+				<li><a href="forms.html">Forms</a></li>
+				<li><a href="icons.html">Icons</a></li>
+				<li><a href="vr.html">Vertical Rhythm</a></li>
+			</ul>
+		</div>
+	</footer>
+
+</div>
+
+</body>
+</html>

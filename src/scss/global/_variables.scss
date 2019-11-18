@@ -1,0 +1,88 @@
+/* global variables */
+/* a good place to start customizing :) */
+
+$body-background: #fff;
+
+/* layout width */
+
+$global-layout-width: 90%;
+$global-max-layout-width: 1200px;
+
+/* breakpoints */
+
+$breakpoint-tablet-landscape: 1024px;
+$breakpoint-tablet-portrait: 800px;
+$breakpoint-mobile: 480px;
+
+/* typography */
+
+$global-font-family: "Open Sans", Helvetica, Arial, sans-serif;
+$heading-font-family: "Open Sans", Helvetica, Arial, sans-serif;
+
+$global-font-size: 15px;
+
+$global-font-weight-thin: 300;
+$global-font-weight-regular: 400;
+$global-font-weight-bold: 700;
+
+$global-line-height: 1.5rem; //   keep these two values the same
+$global-margin-bottom: 1.5rem; // for vertical rhythm
+
+$global-capital-height: .75rem; // capital height (needed for vertical rhythm calculation, may vary for different fonts)
+
+$global-text-color: #555;
+$global-text-background: #f7f7f7;
+
+$heading-color: #555; // for H# tags
+
+$anchor-color: #2e7ec3;
+$anchor-color-hover: #1d64a1;
+
+/* other global values */
+
+$global-spacing: 1.5rem; // for box paddings etc.
+$global-border-width: 1px;
+$global-border-style: solid;
+$global-border-color: #ddd;
+$global-border-radius: 3px;
+$global-border: $global-border-width $global-border-style $global-border-color;
+$global-box-shadow: 0px 3px 5px rgba(0,0,0,.1);
+$global-transition: ease-out 0.25s;
+
+/* form elements  */
+
+$form-control-height: 2.5rem;
+$form-control-border: $global-border-width solid #bbb;
+$form-control-background: #fff;
+$form-control-border-radius: 3px;
+$form-control-shadow: inset 0px 3px 5px rgba(0,0,0,.1), 0px 0px 0px rgba(0,0,0,0);
+$form-control-focus-shadow: inset 0px 0px 0px rgba(0,0,0,0), 0px 3px 5px rgba(0,0,0,.1);
+
+/* buttons */
+
+$button-height: $form-control-height;
+$button-background-color: #be0000;
+$button-background-color-hover: #a20000;
+$button-text-color: #fff;
+$button-text-color-hover: #fff;
+
+$button-secondary-background-color: #686d78;
+$button-secondary-background-color-hover: #4e525d;
+$button-secondary-text-color: #fff;
+
+$button-disabled-background-color: #ccc;
+$button-disabled-text-color: #fff;
+
+$button-border-radius: 3px;
+
+/* icons */
+
+$icon-width: 1.5rem;
+$icon-height: 1.5rem;
+
+/* color scheme helper variables */
+
+$color-primary: #be0000;
+$color-secondary: #4e525d;
+$color-tertiary: #23252a;
+$color-accent: #be0000;

@@ -1,0 +1,54 @@
+.svg-icon {
+	height: $icon-height;
+	width: $icon-height;
+}
+
+.icon, .icon:visited {
+	background: none;
+	box-shadow: none;
+	padding: 0;
+	color: inherit;
+	width: $icon-width;
+	height: $icon-height;
+	line-height: 1;
+	display: inline-block;
+	vertical-align: middle;
+
+	.svg-icon {
+		max-height: $icon-height;
+		margin: 0 auto;
+	}
+
+	&:hover {
+		background: none;
+		color: inherit;
+	}
+
+}
+
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+.button {
+
+	.svg-icon {
+		max-height: 1em;
+		vertical-align: middle;
+		margin-top: -.25em;
+
+		&:first-child {
+			margin-left: -.5rem;
+		}
+
+		&:last-child {
+			margin-right: -.5rem;
+		}
+
+		&.is-single {
+			margin: -.25em -.5rem 0 -.5rem;
+		}
+
+	}
+
+}

@@ -1,0 +1,32 @@
+.message--error,
+.message--success,
+.message--info,
+.message--note {
+	display: block;
+	line-height: inherit;
+	padding: $global-line-height/2 $global-spacing/2;
+	border-radius: $global-border-radius;
+	box-shadow: $global-box-shadow;
+	border: $global-border-width solid rgba(0,0,0,.1);
+	margin-bottom: calc(#{$global-margin-bottom} - 2px);
+}
+
+.message--error {
+	background-color: #ffe9e9;
+	color: #ca3d3d;
+}
+
+.message--success {
+	background-color: #ebf6e0;
+	color: #5f9025;
+}
+
+.message--info {
+	background-color: #e9f7fe;
+	color: #0295cc;
+}
+
+.message--note {
+	background-color: #fbfadd;
+	color: #8f872e;
+}

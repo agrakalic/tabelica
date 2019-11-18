@@ -1,0 +1,133 @@
+/* mobile nav */
+
+$mobile-nav-overlay: rgba(0,0,0,.5);
+$mobile-nav-background: #fff;
+$mobile-nav-width: 400px;
+$mobile-nav-max-width: calc(100% - #{$global-spacing}*2);
+
+@media only screen and (max-width: $breakpoint-tablet-portrait) {
+
+  nav[role="navigation"] {
+    background: $mobile-nav-overlay;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: $global-transition;
+
+    .nav-is-open & {
+      z-index: 9;
+      opacity: 1;
+    }
+
+    > ul {
+      background: $mobile-nav-background;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 9;
+      margin: 0;
+      overflow-y: auto;
+      width: $mobile-nav-width;
+      max-width: $mobile-nav-max-width;
+      padding-top: $global-spacing/2;
+      text-align: left;
+      z-index: 10;
+      transform: translateX(-100%);
+      transition: $global-transition;
+
+      .nav-is-open & {
+        transform: translateX(0);
+      }
+
+      > li {
+        list-style: none;
+        margin: 0;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        padding: $global-spacing/2 $global-spacing;
+        display: block;
+      }
+
+    }
+  }
+
+  .nav-actions {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+
+    &__open{
+      position: absolute;
+      right: $global-spacing/4;
+      top: $global-spacing/4;
+
+      .nav-is-open & {
+        display: none;
+      }
+    }
+
+    &__close{
+      position: absolute;
+      right: $global-spacing/4;
+      top: $global-spacing/4;
+
+      &.icon, &.icon:hover {
+        color: #ffffff;
+        display: none;
+
+        .nav-is-open & {
+          display: block;
+        }
+      }
+
+    }
+
+  }
+
+}
+
+/* desktop nav */
+
+@media only screen and (min-width: $breakpoint-tablet-portrait+1) {
+
+  nav[role="navigation"] {
+
+    border-bottom: $global-border;
+
+    > ul {
+      width: $global-layout-width;
+    	max-width: $global-max-layout-width;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      > li {
+        list-style: none;
+        margin: 0 $global-spacing/2;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        padding: $global-line-height/2 0;
+        display: block;
+      }
+
+    }
+  }
+
+  .nav-actions{
+    display: none;
+  }
+
+}

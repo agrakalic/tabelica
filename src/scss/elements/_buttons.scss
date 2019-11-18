@@ -1,0 +1,65 @@
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+.button,
+.button:visited {
+	display: inline-block;
+	border: none;
+	border-radius: $button-border-radius;
+	background-color: $button-background-color;
+	color: $button-text-color;
+	padding: 0 $global-spacing;
+	height: $button-height;
+	line-height: $button-height;
+	cursor: pointer;
+	vertical-align: middle;
+	text-decoration: none !important;
+	box-shadow: $global-box-shadow;
+	font-size: $global-font-size;
+	font-weight: $global-font-weight-regular;
+	font-style: normal;
+	transition: $global-transition;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:hover {
+	color: $button-text-color-hover;
+	background-color: $button-background-color-hover;
+}
+
+button[type="reset"],
+input[type="reset"],
+.button--secondary {
+	background-color: $button-secondary-background-color;
+	color: $button-secondary-text-color;
+}
+
+button[type="reset"]:hover,
+input[type="reset"]:hover,
+.button--secondary:hover {
+
+	background-color: $button-secondary-background-color-hover;
+}
+
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+
+	&[disabled],
+	&[disabled]:hover {
+		cursor: default;
+		background-color: $button-disabled-background-color;
+		color: $button-disabled-text-color;
+	}
+
+}
+
+.button--block {
+	display: block;
+	width: 100%;
+}

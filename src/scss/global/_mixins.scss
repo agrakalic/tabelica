@@ -1,0 +1,37 @@
+/* mixins */
+
+@mixin hide-text {
+
+	text-align: left;
+	text-indent: -8888px;
+	overflow: hidden;
+
+}
+
+@mixin background-image($url, $repeat, $position) {
+
+	background: url(../img/#{$url}) #{$repeat} #{$position};
+
+}
+
+@mixin background-image-cover($url) {
+
+	background: url(../img/#{$url}) 50% 50%;
+	background-size: cover;
+
+}
+
+@mixin vr($font-size, $line-height){
+
+	$global-baseline-offset: ($global-line-height - $global-capital-height) / 2;
+	$capital-height: $font-size * $global-capital-height;
+	$baseline-offset: (($global-line-height * $line-height) - $capital-height) / 2;
+	$nudge: $baseline-offset - $global-baseline-offset;
+	$line-height-correction: (2 - $line-height) * $global-line-height;
+
+	font-size: $font-size * 1rem;
+	line-height: $global-line-height * $line-height;
+	padding-top: $nudge + $line-height-correction;
+	margin-bottom: $global-margin-bottom - $nudge;
+
+}

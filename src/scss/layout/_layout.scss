@@ -1,0 +1,14 @@
+/* main page layout classes */
+
+.container {}
+
+.header__inner,
+.content__inner,
+.footer__inner,
+.inner {
+	margin: 0 auto;
+	width: $global-layout-width;
+	max-width: $global-max-layout-width;
+	text-align: left;
+	position: relative;
+}

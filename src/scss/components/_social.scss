@@ -1,0 +1,18 @@
+.social {
+  display: flex;
+
+  li {
+    margin: 0 5px;
+    width: $icon-width;
+    height: $icon-height;
+    list-style: none;
+
+    a {
+      display: block;
+      width: $icon-width;
+      height: $icon-height;
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+/* simple percentage based flexbox grid system */
+
+$gutter: 2.5%; // gutter between the columns (percentage only!)
+
+$units: 12;
+$unitWidth: (100% - ($gutter * ($units - 1))) / $units;
+
+@mixin cols($num) {
+	width: ($unitWidth * $num) + ($gutter * ($num - 1));
+}
+
+@mixin fcols($num) {
+	width: (100% / $units) * $num;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+@media only screen and (max-width: $breakpoint-tablet-portrait) {
+
+	.col,
+	.fcol {
+		width: 100%;
+	}
+
+	@for $i from 1 through $units {
+		.col#{$i},
+		.fcol#{$i} {
+			width: 100%;
+		}
+	}
+
+}
+
+@media only screen and (min-width: $breakpoint-tablet-portrait+1) {
+
+	.row {
+		flex-direction: row;
+
+		// 12 unit based columns, with gutter
+		@for $i from 1 through $units {
+			.col#{$i} {
+					@include cols($i);
+			}
+		}
+
+		// 12 unit based columns, no gutter
+		@for $i from 1 through $units {
+			.fcol#{$i} {
+					@include fcols($i);
+			}
+		}
+
+		// flexible columns, with gutter
+		.col {
+			flex-basis: 0;
+			flex-grow: 1;
+			flex-shrink: 1;
+			margin: 0 $gutter/2;
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		// flexible columns, no gutter
+		.fcol {
+			flex-basis: 0;
+			flex-grow: 1;
+			flex-shrink: 1;
+		}
+
+	}
+
+}

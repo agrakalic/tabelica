@@ -1,0 +1,26 @@
+.footer__nav {
+
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > li {
+    list-style: none;
+    margin: 0 $global-spacing/2;
+  }
+
+  a {
+    display: block;
+  }
+
+}
+
+
+@media only screen and (max-width: $breakpoint-tablet-portrait) {
+
+  .footer__nav {
+    flex-direction: column;
+  }
+
+}

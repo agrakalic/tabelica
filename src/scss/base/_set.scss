@@ -1,0 +1,327 @@
+/* setting the unified cross-browser appearance of the HTML elements ("normalize") */
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	-webkit-text-size-adjust: none;
+}
+
+html {
+	box-sizing: border-box;
+	height: 100%;
+}
+
+body {
+	font-family: $global-font-family;
+	line-height: $global-line-height;
+	color: $global-text-color;
+	background: $body-background;
+	text-align: center;
+	height: 100%;
+	font-size: $global-font-size;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $heading-color;
+	margin: 0 0 $global-margin-bottom 0;
+	font-family: $heading-font-family;
+	font-weight: $global-font-weight-bold;
+}
+
+h1 {
+	@include vr(2.5, 2);
+}
+
+h2 {
+	@include vr(2.1, 2);
+}
+
+h3 {
+	@include vr(1.75, 1.5);
+}
+
+h4 {
+	font-size: 1.25rem;
+	font-weight: $global-font-weight-bold;
+}
+
+h5,
+h6 {
+	font-size: 1em;
+	font-weight: $global-font-weight-bold;
+}
+
+p,
+blockquote,
+ul,
+ol,
+dl,
+form,
+table,
+pre {
+	display: block;
+	margin: 0 0 $global-margin-bottom 0;
+}
+
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
+	display: block;
+}
+
+ul,
+ol,
+dl {
+	padding: 0;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul,
+dd {
+	margin: 0;
+}
+
+li {
+	margin: 0 0 0 $global-spacing*2;
+	padding: 0;
+	display: list-item;
+	list-style-position: outside;
+}
+
+dd {
+	padding: 0 0 0 $global-spacing;
+}
+
+pre,
+code,
+samp,
+kbd,
+var {
+	font: .9em Monaco, "Courier New", monospace;
+}
+
+code {
+	color: inherit;
+	background: rgba(0,0,0,.05);
+	padding: 0 5px;
+}
+
+pre {
+	overflow: auto;
+}
+
+abbr,
+acronym {
+	text-transform: uppercase;
+	border-bottom: 1px dotted #000;
+	letter-spacing: .01em;
+}
+
+abbr[title],
+acronym[title] {
+	cursor: help;
+}
+
+small {
+	font-size: .9rem;
+}
+
+sup{
+	font-size: .8rem;
+	vertical-align: top;
+	position: relative;
+	top: -.5rem;
+}
+sub {
+	font-size: .8rem;
+	vertical-align: bottom;
+	position: relative;
+	bottom: -.5rem;
+}
+
+em,
+cite,
+q {
+	font-style: italic;
+}
+
+ins {
+	text-decoration: none;
+	color: $color-accent;
+	font-style: italic;
+}
+
+img {
+	border: none;
+}
+
+figure {
+	margin: 0 0 .5em 0;
+	display: table;
+}
+
+meter,
+progress,
+audio,
+video {
+	width: 100%;
+}
+
+hr {
+	display: block;
+	clear: both;
+	height: 1px;
+	border: 0;
+	border-top: $global-border;
+	margin: -1px 0 $global-margin-bottom 0;
+	padding: 0;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	display: table;
+}
+
+th,
+caption {
+	text-align: left;
+}
+
+label {
+	display: block;
+}
+
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+legend {
+	font-weight: $global-font-weight-bold;
+}
+
+input,
+select {
+	vertical-align: middle;
+}
+
+input[type="radio"],
+input[type="checkbox"],
+.radio,
+.checkbox {
+	margin: 0 .25rem 0 0;
+}
+
+::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+::-moz-selection {
+	background: #555;
+	color: #fff;
+}
+
+::selection {
+	background: #555;
+	color: #fff;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+}
+
+table,
+input,
+textarea,
+select,
+li,
+button,
+p {
+	font-family: inherit;
+	line-height: inherit;
+}
+
+a,
+a:visited {
+	color: $anchor-color;
+}
+
+a:hover {
+	color: $anchor-color-hover;
+}
+
+pre {
+	padding: calc(#{$global-line-height}/2 - 1px) $global-spacing;
+	border: $global-border;
+	line-height: inherit;
+	background: $global-text-background;
+}
+
+blockquote {
+	padding: 0;
+	margin-left: $global-spacing;
+	font-style: italic;
+}
+
+dt {
+	font-weight: $global-font-weight-bold;
+}
+
+table {
+	width: 100%;
+}
+
+.table-wrapper{
+	width: 100%;
+	overflow-x: auto;
+}
+
+th,
+td {
+	padding: calc(#{$global-line-height}/2 - 1px) $global-spacing/2 $global-line-height/2 $global-spacing/2;
+	line-height: $global-line-height;
+	vertical-align: top;
+	border-bottom: $global-border;
+}
+
+tr:nth-child(odd) td {
+	background: $global-text-background;
+}
+
+caption {
+	font-style: italic;
+}
+
+figcaption {
+	font-style: italic;
+	margin: .25em 0;
+	text-align: center;
+	font-size: .9em;
+	line-height: 1.5em;
+}

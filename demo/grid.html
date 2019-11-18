@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../dist/css/main.css">
+	<style>
+		/* demo purpose styles */
+
+		.row > div {
+			padding: 10px;
+			background: #f1f1f1;
+			overflow: hidden;
+		}
+		.row > div:nth-child(odd) {
+			background: #e1e1e1;
+		}
+
+		@media only screen and (max-width: 800px) {
+
+			.row > div {
+				margin-bottom: 1.5rem;
+			}
+
+		}
+		@media only screen and (min-width: 801px) {
+
+			.row {
+				margin-bottom: 1.5rem;
+			}
+
+		}
+	</style>
+</head>
+<body>
+
+<div class="container">
+
+	<header class="header" role="banner">
+		<div class="header__inner">
+			<h1>Simple Grid System</h1>
+			<p>To change the gutter width, simply go to <code>src/scss/layout/grid.scss</code> and edit the variable named <code>$gutter</code>. Please use percentage values.<br />
+			Unlike many other similar projects, grid system in Tabelica uses margins instead of paddings for columns, reducing the need of an extra child element.</p>
+		</div>
+	</header>
+
+	<div class="content">
+		<div class="content__inner">
+
+				<h2>Percentage based width, with gutter</h2>
+				<p>Use class names <code>.col1 ... .col12</code></p>
+
+				<div class="row">
+					<div class="col6">.col6</div>
+					<div class="col6">.col6</div>
+				</div>
+
+				<div class="row">
+					<div class="col4">.col4</div>
+					<div class="col4">.col4</div>
+					<div class="col4">.col4</div>
+				</div>
+
+				<div class="row">
+					<div class="col3">.col3</div>
+					<div class="col3">.col3</div>
+					<div class="col3">.col3</div>
+					<div class="col3">.col3</div>
+				</div>
+
+				<div class="row">
+					<div class="col2">.col2</div>
+					<div class="col2">.col2</div>
+					<div class="col2">.col2</div>
+					<div class="col2">.col2</div>
+					<div class="col2">.col2</div>
+					<div class="col2">.col2</div>
+				</div>
+
+				<div class="row">
+					<div class="col1">.col1</div>
+					<div class="col1">.col1</div>
+					<div class="col1">.col1</div>
+					<div class="col1">.col1</div>
+					<div class="col1">.col1</div>
+					<div class="col1">.col1</div>
+					<div class="col1">.col1</div>
+					<div class="col1">.col1</div>
+					<div class="col1">.col1</div>
+					<div class="col1">.col1</div>
+					<div class="col1">.col1</div>
+					<div class="col1">.col1</div>
+				</div>
+
+				<div class="row">
+					<div class="col5">.col5</div>
+					<div class="col4">.col4</div>
+					<div class="col3">.col3</div>
+				</div>
+
+				<div class="row">
+					<div class="col2">.col2</div>
+					<div class="col2">.col2</div>
+					<div class="col8">.col8</div>
+				</div>
+
+				<div class="row">
+					<div class="col3">.col3</div>
+					<div class="col6">.col6</div>
+					<div class="col3">.col3</div>
+				</div>
+
+				<h2>Percentage based width, no gutter</h2>
+				<p>Use class names <code>.fcol1 ... .fcol12</code> (full column)</p>
+
+				<div class="row">
+				  <div class="fcol6">.fcol6</div>
+				  <div class="fcol6">.fcol6</div>
+				</div>
+
+				<div class="row">
+				  <div class="fcol4">.fcol4</div>
+				  <div class="fcol4">.fcol4</div>
+				  <div class="fcol4">.fcol4</div>
+				</div>
+
+				<div class="row">
+				  <div class="fcol3">.fcol3</div>
+				  <div class="fcol3">.fcol3</div>
+				  <div class="fcol3">.fcol3</div>
+				  <div class="fcol3">.fcol3</div>
+				</div>
+
+				<div class="row">
+				  <div class="fcol2">.fcol2</div>
+				  <div class="fcol2">.fcol2</div>
+				  <div class="fcol2">.fcol2</div>
+				  <div class="fcol2">.fcol2</div>
+				  <div class="fcol2">.fcol2</div>
+				  <div class="fcol2">.fcol2</div>
+				</div>
+
+				<div class="row">
+				  <div class="fcol1">.fcol1</div>
+				  <div class="fcol1">.fcol1</div>
+				  <div class="fcol1">.fcol1</div>
+				  <div class="fcol1">.fcol1</div>
+				  <div class="fcol1">.fcol1</div>
+				  <div class="fcol1">.fcol1</div>
+				  <div class="fcol1">.fcol1</div>
+				  <div class="fcol1">.fcol1</div>
+				  <div class="fcol1">.fcol1</div>
+				  <div class="fcol1">.fcol1</div>
+				  <div class="fcol1">.fcol1</div>
+				  <div class="fcol1">.fcol1</div>
+				</div>
+
+				<div class="row">
+				  <div class="fcol5">.fcol5</div>
+				  <div class="fcol4">.fcol4</div>
+				  <div class="fcol3">.fcol3</div>
+				</div>
+
+				<div class="row">
+				  <div class="fcol2">.fcol2</div>
+				  <div class="fcol2">.fcol2</div>
+				  <div class="fcol8">.fcol8</div>
+				</div>
+
+				<div class="row">
+				  <div class="fcol3">.fcol3</div>
+				  <div class="fcol6">.fcol6</div>
+				  <div class="fcol3">.fcol3</div>
+				</div>
+
+				<h2>Flexible width, with gutter</h2>
+				<p>Use class name <code>.col</code> and put as many as you need. Columns resize to fit, gutter width is preserved</p>
+
+				<div class="row">
+				  <div class="col">.col</div>
+				  <div class="col">.col</div>
+					<div class="col">.col</div>
+					<div class="col">.col</div>
+					<div class="col">.col</div>
+				</div>
+
+				<h2>Flexible width, no gutter</h2>
+				<p>Use class name <code>.fcol</code> (full column) and put as many as you need. Columns resize to fit.</p>
+
+				<div class="row">
+				  <div class="fcol">.fcol</div>
+				  <div class="fcol">.fcol</div>
+					<div class="fcol">.fcol</div>
+					<div class="fcol">.fcol</div>
+				</div>
+
+		</div>
+	</div>
+
+	<footer class="footer" role="contentinfo">
+		<div class="footer__inner">
+			<ul class="footer__nav">
+				<li><a href="text.html">Text Styles</a></li>
+				<li><a href="grid.html">Grid System</a></li>
+				<li><a href="forms.html">Forms</a></li>
+				<li><a href="icons.html">Icons</a></li>
+				<li><a href="vr.html">Vertical Rhythm</a></li>
+			</ul>
+		</div>
+	</footer>
+
+</div>
+
+</body>
+</html>

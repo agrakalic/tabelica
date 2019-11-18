@@ -1,0 +1,17 @@
+.content {
+  padding: $global-spacing 0;
+}
+
+/* main content elements use built-in grid system (_grid.scss) */
+
+.content__main{
+	@extend .row;
+}
+
+main[role="main"] {
+	@extend .col8;
+}
+
+aside[role="complementary"] {
+	@extend .col4;
+}
