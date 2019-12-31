@@ -71,8 +71,10 @@ form {
 
 textarea {
 	overflow: auto;
-	height: 150px;
+	height: $global-line-height*3;
 	resize: vertical;
+	line-height: $global-line-height;
+	padding: $global-line-height/2 $global-spacing/2;
 }
 
 input[type="color"] {

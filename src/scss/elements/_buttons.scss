@@ -20,6 +20,10 @@ input[type="button"],
 	font-weight: $global-font-weight-regular;
 	font-style: normal;
 	transition: $global-transition;
+
+	&:focus {
+		outline: none;
+	}
 }
 
 button:hover,
